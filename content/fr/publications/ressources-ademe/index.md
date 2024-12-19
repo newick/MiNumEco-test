@@ -3,7 +3,6 @@ layout: layouts/post.njk
 title: Liste des ressources ADEME sur le numérique responsable
 description: Guides, études, expositions, articles, infographies proposées par l'Ademe sur les impacts environnementaux du numérique et les moyens de les réduire.
 date: 2022-04-14
-image: /img/publications/ressources-ademe/face-cachee-numerique.webp
 type: publication
 focus: false # Cette publication est en 3e section
 category: autres  # Champ supplémentaire pour distinguer de la 2e section
@@ -15,6 +14,7 @@ eleventyNavigation:
   image: /img/publications/ressources-ademe/face-cachee-numerique.webp
   order: 10
 ---
+<!-- image: /img/publications/ressources-ademe/face-cachee-numerique.webp -->
 
 ## Ressources ADEME
 
@@ -70,10 +70,10 @@ eleventyNavigation:
     - [Où sont stockées mes données numériques ?](https://www.youtube.com/watch?v=yY3NBc8spMI)
     - [Quelle fin de vie pour un smartphone ?](https://www.youtube.com/watch?v=2RF1QNhaXio)
     - [Quels sont les impacts du partage de vidéos et de photos ?](https://www.youtube.com/watch?v=YbYr_icc13k)
--	Ecolo au bureau 
+-	Ecolo au bureau
     - [Chouchouter son ordinateur](https://www.youtube.com/watch?v=UkqY3Xbc0hQ)
     - [L’impact du numérique](https://www.youtube.com/watch?v=WV7An10k11Q)
--	UPPERCUT avec Julien Vidal : 
+-	UPPERCUT avec Julien Vidal :
     - [Comment adopter les bons gestes numériques en télétravail ?](https://www.youtube.com/watch?v=WPGD_s0Ae10)
     - [Qui est le troisième consommateur mondial d’électricité ?](https://www.youtube.com/watch?v=ti8wFw3WMuw&list=PLIGbVmWpW-WxXSnn_XJxSia9ajf8ehPDC&index=7)
     - [Comment réduire l’empreinte écologique de nos smartphones](https://www.youtube.com/watch?v=AD7ucQy9was)
@@ -86,7 +86,7 @@ eleventyNavigation:
 
 -	[Numérique : aubaine ou fléau ? MAG ADEME d'avril 2020](https://fr.calameo.com/read/00459949924503230a136)
 
-### Campagne « Nos Objets ont plein d’avenirs » 
+### Campagne « Nos Objets ont plein d’avenirs »
 
 -	[Spot TV sur le téléphone portable à réparer, à acheter d’occasion / reconditionné](https://www.youtube.com/watch?v=_NCDJCOaS6g)
 -	[Annonce presse sur l’ordinateur reconditionné](https://longuevieauxobjets.gouv.fr/sites/ademe.fr/files/documents/210x297_AFFICHETTE_STANDARD_OCCASION.pdf )

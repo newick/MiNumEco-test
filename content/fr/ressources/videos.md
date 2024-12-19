@@ -10,4 +10,4 @@ eleventyNavigation:
 
 <h2>Toutes les vidéos</h2>
 {% set postslist = collections['Vidéo'] | reverse %}
-{% include "postslist.njk" %} -->
+{% include "postslist.njk" %}

@@ -7,16 +7,9 @@ image: /img/outils/outils.png
 type: publication
 focus: false # Cette publication est en 3e section
 category: autres  # Champ supplémentaire pour distinguer de la 2e section
-eleventyNavigation:
-  key: boiteoutils
-  parent: publications
-  title: Boite à outils numérique écoresponsable
-  image: /img/outils/outils.png
-  date: 2023-07-18
-  order: 70
 ---
 
-{% include "breadcrumb.njk" %}
+{% include "components/breadcrumb.njk" %}
 
 <h1>{{ title }}</h1>
 
@@ -44,7 +37,7 @@ eleventyNavigation:
 </div>
 
 <div class="fr-grid-row fr-grid-row--gutters">
-   
+
 {% for tool in collections.tool | sort(attribute="data.title") %}
   <div class="fr-col-12 fr-col-md-4">
     <div class="fr-card fr-enlarge-link">
@@ -59,7 +52,7 @@ eleventyNavigation:
             </p>
             {% endif %}
         </div>
-    </div> 
+    </div>
   </div>
 {% endfor %}
 

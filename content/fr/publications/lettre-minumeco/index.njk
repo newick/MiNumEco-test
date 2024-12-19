@@ -6,16 +6,9 @@ date: 2024-09-20
 image: /img/publications/lettre-linkedin/lettre-1.webp
 type: publication
 focus: false # Cette publication est en 2e section
-eleventyNavigation:
-  key: lettre-linkedin-minumeco
-  parent: publications
-  title: "Lettre de la MiNumEco : lettre d'information sur LinkedIn"
-  date: 2024-09-21
-  image: /img/publications/lettre-linkedin/lettre-1.webp
-  order: 230
 ---
 
-{% include "breadcrumb.njk" %}
+{% include "components/breadcrumb.njk" %}
 
 <h1>{{ title }}</h1>
 
@@ -46,7 +39,7 @@ eleventyNavigation:
 <!-- Affichage du contenu de la collection -->
 <div class="fr-grid-row fr-grid-row--gutters">
 
-{% set postslist = collections.lettrelinkedinminumeco %}   
+{% set postslist = collections.lettrelinkedinminumeco %}
 {% for post in postslist %}
   <div class="fr-col-12 fr-col-md-3">
     <div class="fr-card fr-enlarge-link">
@@ -59,7 +52,7 @@ eleventyNavigation:
         <div>
             <img src="{{ post.data.apercu }}" class="fr-responsive-img" loading="lazy" alt="">
         </div>
-    </div> 
+    </div>
   </div>
 {% endfor %}
 

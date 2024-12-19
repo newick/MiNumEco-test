@@ -3,7 +3,6 @@ layout: layouts/post.njk
 title: Vidéos de la journée DPSI - Numérique responsable
 description: Le 9 février 2021, s'est tenue à la DINUM, une journée de sensibilisation sur le thème du Numérique responsable pour les DPSI, les directeurs et directrices des Projets des Système d'Information de l'État.
 date: 2021-10-01
-image: /img/publications/journee-dpsi/journee-dpsi.webp
 type: publication
 focus: false # Cette publication est en 3e section
 category: autres  # Champ supplémentaire pour distinguer de la 2e section
@@ -15,6 +14,7 @@ eleventyNavigation:
   image: /img/publications/journee-dpsi/journee-dpsi.webp
   order: 50
 ---
+<!-- image: /img/publications/journee-dpsi/journee-dpsi.webp -->
 
 Le 9 février 2021, s'est tenue à la DINUM, une journée de sensibilisation sur le thème du Numérique responsable pour les DPSI, les directeurs et directrices des Projets des Système d'Information de l'État.
 

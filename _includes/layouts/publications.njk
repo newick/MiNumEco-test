@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 ---
 
-{% include "breadcrumb.njk" %}
+{% include "components/breadcrumb.njk" %}
 
 <h1>{{ title }}</h1>
 
@@ -44,7 +44,7 @@ layout: layouts/base.njk
             {# image #}
             <img src="{{ post.image }}" loading="lazy" alt="">
         </div>
-    </div> 
+    </div>
   </div>
   {% endif %}
 {% endfor %}
@@ -60,22 +60,22 @@ layout: layouts/base.njk
 
 {% for post in postslist | reverse %}
 
-  {# Un second bloc conditionnel s'assure que seules les publications 
-  sans la propriété focus et sans la catégorie "autres" sont affichées 
+  {# Un second bloc conditionnel s'assure que seules les publications
+  sans la propriété focus et sans la catégorie "autres" sont affichées
   dans cette 2e section. #}
   {% if post.data.focus == false and post.data.category != "autres" %}
 
-  {# Ces publications sont affichées en colonnes sur un tiers de la largeur de la page 
+  {# Ces publications sont affichées en colonnes sur un tiers de la largeur de la page
   pour les écrans de taille moyenne #}
   <div class="fr-col-12 fr-col-md-4">
     {# sous forme de cartes verticales #}
     <div class="fr-card fr-enlarge-link">
         <div class="fr-card__body">
-            
+
             <h3 class="fr-card__title">
                 <a href="{{ post.url | url }}" class="fr-card__link">{{ post.title }}</a>
             </h3>
-            
+
             {% if post.data.description %}
             <p class="fr-card__desc">
               {{ post.data.description }}
@@ -85,7 +85,7 @@ layout: layouts/base.njk
         <div class="fr-card__img">
             <img src="{{ post.image }}" alt="">
         </div>
-    </div> 
+    </div>
   </div>
   {% endif %}
 {% endfor %}
@@ -101,22 +101,22 @@ layout: layouts/base.njk
 
 {% for post in postslist | reverse %}
 
-{# Un troisième bloc conditionnel s'assure que seules les publications 
-  sans la propriété focus et avec la catégorie "autres" sont affichées 
+{# Un troisième bloc conditionnel s'assure que seules les publications
+  sans la propriété focus et avec la catégorie "autres" sont affichées
   dans cette 3e section. #}
 {% if post.data.category == "autres" %}
 
-  {# Ces publications sont affichées en colonnes sur un tiers de la largeur de la page 
+  {# Ces publications sont affichées en colonnes sur un tiers de la largeur de la page
   pour les écrans de taille moyenne #}
   <div class="fr-col-12 fr-col-md-4">
     {# sous forme de cartes verticales #}
     <div class="fr-card fr-enlarge-link">
         <div class="fr-card__body">
-            
+
             <h3 class="fr-card__title">
                 <a href="{{ post.url | url }}" class="fr-card__link">{{ post.title }}</a>
             </h3>
-            
+
             {% if post.data.description %}
             <p class="fr-card__desc">
               {{ post.data.description }}
@@ -126,7 +126,7 @@ layout: layouts/base.njk
         <div class="fr-card__img">
             <img src="{{ post.image }}" alt="">
         </div>
-    </div> 
+    </div>
   </div>
   {% endif %}
 {% endfor %}

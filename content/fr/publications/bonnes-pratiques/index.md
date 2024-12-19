@@ -6,13 +6,6 @@ date: 2023-06-19
 image: /img/publications/bonnes-pratiques/guide-bonnes-pratiques-vignette.webp
 type: publication
 focus: true # Cette publication est en 1ère section
-eleventyNavigation:
-  key: guideBpNrAccueil
-  parent: publications
-  title: Guide de bonnes pratiques numérique responsable pour les organisations
-  date: 2022-02-17
-  image: /img/publications/bonnes-pratiques/guide-bonnes-pratiques-vignette.webp
-  order: 100
 ---
 
 <div class="fr-grid-row fr-grid-row--gutters">

@@ -2,10 +2,10 @@
 layout: layouts/base.njk
 ---
 
-{% include "breadcrumb.njk" %}
+{% include "components/breadcrumb.njk" %}
 
 <h1>{{ title }}</h1>
- 
+
 {% set postslist = collections.all | eleventyNavigationByKeys(items) %}
 
 {% include "postslist.njk" %}

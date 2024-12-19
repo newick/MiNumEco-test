@@ -1,6 +1,8 @@
 const { DateTime } = require("luxon");
 const { nanoid } = require("nanoid");
 
+const markdownIt = require("markdown-it");
+const markdown = require('markdown-it')({ html: true })
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownItContainer = require("markdown-it-container");
@@ -248,6 +250,70 @@ module.exports = function (eleventyConfig) {
 			</div>
 		`;
 	});
+
+	// OLD CODE
+	function findNavigationEntriesExtended(nodes = [], key = '') {
+    let pages = [];
+    for(let entry of nodes) {
+      if(entry.data && entry.data.eleventyNavigation) {
+        let nav = entry.data.eleventyNavigation;
+        if(!key && !nav.parent || nav.parent === key) {
+          pages.push(Object.assign({}, nav, {
+            url: nav.url || entry.data.page.url,
+            data: entry.data,
+            pluginType: 'eleventy-navigation'
+          }, key ? { parentKey: key } : {}));
+        }
+      }
+    }
+
+    return pages.sort(function(a, b) {
+      return (a.order || 0) - (b.order || 0);
+    }).map(function(entry) {
+      if(!entry.title) {
+        entry.title = entry.key;
+      }
+      if(entry.key) {
+        entry.children = findNavigationEntriesExtended(nodes, entry.key);
+      }
+      return entry;
+    });
+  }
+
+	//Old filter
+	eleventyConfig.addNunjucksFilter('eleventyNavigationExtended', findNavigationEntriesExtended);
+
+	function findNavigationEntryByKeys(nodes = [], keys = []) {
+    let pages = [];
+
+    for (let key of keys) {
+      for (let entry of nodes) {
+        if (entry.data && entry.data.eleventyNavigation && entry.data.eleventyNavigation.key) {
+          let entryKey = entry.data.eleventyNavigation.key;
+
+          if (entryKey === key) {
+            pages.push({
+              title: entry.data.title,
+              url: entry.url || entry.data.page.url,
+              data: entry.data,
+              pluginType: 'eleventy-navigation'
+            });
+
+            break;
+          }
+        }
+      }
+    }
+
+    return pages;
+  }
+
+	eleventyConfig.addNunjucksFilter('eleventyNavigationByKeys', findNavigationEntryByKeys);
+
+	// Parse markdown
+  eleventyConfig.addFilter('markdown', value => {
+    return markdown.render(value);
+  })
 
 	return {
 		// Control which files Eleventy will process

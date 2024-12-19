@@ -6,16 +6,9 @@ date: 2024-07-20
 image: /img/videos/miniserie/banniere-videos-miniserie.webp
 type: publication
 focus: false # Cette publication est en 2e section
-eleventyNavigation:
-  key: videosVersUnNumeriqueEcoresponsable
-  parent: publications
-  title: "Vidéos : le réseau des référents ministériels numérique responsable"
-  date: 2024-07-19
-  image: /img/videos/miniserie/banniere-videos-miniserie.webp
-  order: 170
 ---
 
-{% include "breadcrumb.njk" %}
+{% include "components/breadcrumb.njk" %}
 
 <h1>{{ title }}</h1>
 
@@ -23,7 +16,7 @@ eleventyNavigation:
 
 <div class="fr-grid-row fr-grid-row--gutters">
 
-{% set postslist = collections.miniserie %}   
+{% set postslist = collections.miniserie %}
 {% for post in postslist %}
   <div class="fr-col-12 fr-col-md-3">
     <div class="fr-card fr-enlarge-link">
@@ -36,7 +29,7 @@ eleventyNavigation:
         <div>
             <img src="{{ post.data.apercu }}" class="fr-responsive-img" loading="lazy" alt="">
         </div>
-    </div> 
+    </div>
   </div>
 {% endfor %}
 
