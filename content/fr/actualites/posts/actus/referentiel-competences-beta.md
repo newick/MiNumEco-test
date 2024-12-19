@@ -36,24 +36,32 @@ Cette première version sera consolidée au 1er trimestre 2025 avec les retours 
 ## Contenu
 
 Les compétences sont réparties en 9 blocs :
-* usages quotidiens
-* green IT
-* Ecoconception applicative
-* Data et IA
-* Matériel
-* Hébergement
-* Réseaux et télécoms
-* Mesure de l'empreinte environnementale du SI
-* Achats
+<div class="fr-highlight">
+<ul>
+	<li>usages quotidiens</li>
+	<li>green IT</li>
+	<li>Ecoconception applicative</li>
+	<li>Data et IA</li>
+	<li>Matériel</li>
+	<li>Hébergement</li>
+	<li>Réseaux et télécoms</li>
+	<li>Mesure de l'empreinte environnementale du SI</li>
+	<li>Achats</li>
+</ul>
+</div>
 
-Sur 5 niveaux d'expertises
+Sur 5 niveaux d'expertises :
 
-* NA - non nécessaire dans la pratique professionnelle
-* Niveau 1 - Bases de compréhension
-* Niveau 2 - Capacité de compréhension et d'échange avec un technicien, expert ou prestataire, exprimer un besoin métier
-* Niveau 3 - Maîtrise des concepts et capacités de mise en oeuvre liée à son métier (dév, design, data, etc)
-* Niveau 4 - Maîtrise des concepts pour l'ensemble des métiers et mise en oeuvre stratégie
-* Niveau 5 - Expertise - capacité à proposer une stratégie
+<div class="fr-highlight">
+	<ul>
+	<li>NA - non nécessaire dans la pratique professionnelle</li>
+	<li>Niveau 1 - Bases de compréhension</li>
+	<li>Niveau 2 - Capacité de compréhension et d'échange avec un technicien, expert ou prestataire, exprimer un besoin métier</li>
+	<li>Niveau 3 - Maîtrise des concepts et capacités de mise en oeuvre liée à son métier (dév, design, data, etc)</li>
+	<li>Niveau 4 - Maîtrise des concepts pour l'ensemble des métiers et mise en oeuvre stratégie</li>
+	<li>Niveau 5 - Expertise - capacité à proposer une stratégie</li>
+</ul>
+</div>
 
 Recensés pour 56 du numérique du [RMFP (Répertoires des métiers de la fonction publique) de la DGAFP - Direction Générale des Agents de la Fonction Publique](https://www.fonction-publique.gouv.fr/files/files/actualites/rmfp-v1-complet.pdf)
 

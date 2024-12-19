@@ -144,3 +144,7 @@ div.fr-callout__text p {
 .text-center {
     text-align: center;
 }
+
+.fr-grid-row .fr-card.fr-enlarge-link.fr-card--download {
+	height: fit-content;
+}
