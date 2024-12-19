@@ -1,6 +1,6 @@
 ---js
 {
-  title: "Documentation",
+  title: "Actualités",
   pagination: {
     data: "collections.posts",
     size: 6,
@@ -10,9 +10,9 @@
     }
   },
   layout: "layouts/page.njk",
-  permalink: "/{{ lang }}/blog/{% if pagination.pageNumber %}{{ pagePrefix }}{{ pagination.pageNumber + 1 }}/{% endif %}",
+  permalink: "/{{ lang }}/actualites/{% if pagination.pageNumber %}{{ pagePrefix }}{{ pagination.pageNumber + 1 }}/{% endif %}",
   eleventyNavigation: {
-    key: "Documentation",
+    key: "Actualités",
     order: 2
   }
 }
