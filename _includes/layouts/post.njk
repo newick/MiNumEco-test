@@ -30,9 +30,4 @@ layout: layouts/base.njk
       {{ content | safe }}
     </div>
   </div>
-
-  {% if collections.posts %}
-    {% set currentPosts = collections.posts %}
-    {% include "previousnextlinks.njk" %}
-  {% endif %}
 </div>
